@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: spin 20s linear infinite;
+  height: 80px;
+}
+.App-header {
+  background-color: #b36b6b;
+  height: 150px;
+  padding: 20px;
+  color: #a94c4c;
+}
+.App-header-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}
+.App-separator {
+  position: static;
+  height: 228px;
+}
+.App-enable-remove-mode {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.App-remove-mode {
+  padding-top: 10px;
+}
+.App-swipeable-views {
+  padding: 20px;
+}
+
+
+.app-lists {
+  padding-bottom: 20px;
+}
+
+.swipeable-views {
+  padding-bottom: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.enable-remove-mode .material-icons,
+.toggle-dark-mode .material-icons {
+  background-color: #800000; 
+  border-radius: 50%; 
+  padding: 8px; 
+}
+
+.remove-mode-animation-enter {
+  opacity: 0.01;
+}
+
+.remove-mode-animation-enter.remove-mode-animation-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.remove-mode-animation-leave {
+  opacity: 1;
+}
+
+.remove-mode-animation-leave.remove-mode-animation-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+/*# sourceMappingURL=App.css.map */

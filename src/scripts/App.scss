@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+
+  &-header {
+    background-color: #b36b6b; 
+    height: 150px;
+    padding: $task-list-padding;
+    color:  #f5ebeb;
+
+    &-title {
+      font-size: 1.5em;
+    }
+  }
+
+  &-intro {
+    font-size: large;
+  }
+
+  &-separator {
+    position: static;
+    height: 228px;
+  }
+
+  &-enable-remove-mode {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+  }
+
+  &-remove-mode {
+    padding-top: 10px;
+  }
+
+  &-swipeable-views {
+    padding: $task-list-padding;
+  }
+}
+
+.app-lists {
+  padding-bottom: 20px;
+}
+
+.swipeable-views {
+  padding-bottom: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.enable-remove-mode .material-icons,
+.toggle-dark-mode .material-icons {
+  background-color: #800000; 
+  border-radius: 50%; 
+  padding: 8px; 
+}
+
+.remove-mode-animation-enter {
+  opacity: 0.01;
+}
+
+.remove-mode-animation-enter.remove-mode-animation-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.remove-mode-animation-leave {
+  opacity: 1;
+}
+
+.remove-mode-animation-leave.remove-mode-animation-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
