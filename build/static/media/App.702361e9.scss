@@ -1,0 +1,100 @@
+
+$list-item-background-color: #f4fdfe;
+$list-item-border-radius: 3px;
+$list-item-padding: 10px;
+$task-list-padding: 20px;
+
+.App {
+  text-align: center;
+
+  &-logo {
+    animation: spin 20s linear infinite;
+    height: 80px;
+  }
+
+  &-header {
+    background-color: #b36b6b; // Dark mode header background color
+    height: 150px;
+    padding: $task-list-padding;
+    color:  #a94c4c; // Dark mode text color
+
+    &-title {
+      font-size: 1.5em;
+    }
+  }
+
+  &-intro {
+    font-size: large;
+  }
+
+  &-separator {
+    position: static;
+    height: 228px;
+  }
+  
+  &-enable-remove-mode {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+  }
+
+  &-remove-mode {
+    padding-top: 10px;
+  }
+
+  &-swipeable-views {
+    padding: $task-list-padding;
+  }
+  
+
+  &.dark-mode {
+    background-color: #333; 
+    color: #fff; 
+  }
+
+  &.light-mode {
+    background-color: #fff; 
+    color: #333; 
+  }
+}
+
+.app-lists {
+  padding-bottom: 20px;
+}
+
+.swipeable-views {
+  padding-bottom: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.enable-remove-mode .material-icons,
+  .toggle-dark-mode .material-icons {
+    background-color: #800000; /* Maroon color */
+    border-radius: 50%; /* Ensures the background is circular */
+    padding: 8px; /* Adjust padding as needed */
+  }
+  .remove-mode-animation-enter {
+    opacity: 0.01;
+  }
+  
+  .remove-mode-animation-enter.remove-mode-animation-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .remove-mode-animation-leave {
+    opacity: 1;
+  }
+  
+  .remove-mode-animation-leave.remove-mode-animation-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+  
