@@ -10,7 +10,9 @@
     "react-scripts": "5.0.0",
     "react-swipeable-views": "^0.13.9",
     "react-transition-group": "^2.11.0",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "homepage": "https://Sara-Bader.github.io/To-Do-List",
+
   },
   "scripts": {
     "start": "react-scripts start",
