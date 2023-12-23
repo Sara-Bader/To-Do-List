@@ -6,7 +6,6 @@ A to do list using react
 
 ## Getting Started
 
-Clone the project using 
 
 ### Prerequisites
 
@@ -14,11 +13,10 @@ Clone the project using
 ```bash
 Node.js
 npm
-Installation
+
 
 
 bash
-Copy code
 # Clone the repository
 git clone https://github.com/Sara-Bader/To-Do-List.git
 # Navigate to the project directory
